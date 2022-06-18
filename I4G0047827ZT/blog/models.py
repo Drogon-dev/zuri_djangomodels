@@ -9,3 +9,7 @@ class Post(models.Model):
     Created_date = models.DateTimeField()
     Published_date = models.DateTimeField()
 
+    
+    def __str__(self) -> str:
+        return self.Title
+
